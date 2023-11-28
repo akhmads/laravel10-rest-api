@@ -1,0 +1,366 @@
+{
+    "collection": {
+        "info": {
+            "_postman_id": "e4017a40-775b-4e0e-9f74-685d0cdfda66",
+            "name": "Laravel Rest API",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+            "updatedAt": "2023-11-28T13:34:13.000Z",
+            "uid": "26597937-e4017a40-775b-4e0e-9f74-685d0cdfda66"
+        },
+        "item": [
+            {
+                "name": "/api/register",
+                "id": "ef7e2751-1f0f-4a22-afe4-e2485af8d87e",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": [
+                            {
+                                "key": "name",
+                                "value": "Akhmad Shaleh",
+                                "type": "text"
+                            },
+                            {
+                                "key": "email",
+                                "value": "luckynumber1@gmail.com",
+                                "type": "text"
+                            },
+                            {
+                                "key": "password",
+                                "value": "q1w2e3r4",
+                                "type": "text"
+                            },
+                            {
+                                "key": "c_password",
+                                "value": "q1w2e3r4",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "raw": "http://localhost:8000/api/register",
+                        "protocol": "http",
+                        "host": ["localhost"],
+                        "port": "8000",
+                        "path": ["api", "register"]
+                    }
+                },
+                "response": [],
+                "uid": "26597937-ef7e2751-1f0f-4a22-afe4-e2485af8d87e"
+            },
+            {
+                "name": "/api/login",
+                "id": "7d889aa4-e027-4975-bf77-e0671f162bea",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": [
+                            {
+                                "key": "email",
+                                "value": "luckynumber1@gmail.com",
+                                "type": "text"
+                            },
+                            {
+                                "key": "password",
+                                "value": "q1w2e3r4",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "raw": "http://localhost:8000/api/login",
+                        "protocol": "http",
+                        "host": ["localhost"],
+                        "port": "8000",
+                        "path": ["api", "login"]
+                    }
+                },
+                "response": [],
+                "uid": "26597937-7d889aa4-e027-4975-bf77-e0671f162bea"
+            },
+            {
+                "name": "/api/products",
+                "id": "6f67d174-376a-4b27-9f5e-6d653cc3a459",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "GET",
+                    "header": [
+                        {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Authorization",
+                            "value": "Bearer KGKuOkaCW08xV8oCNi1BmB96BhPiepgjFZA99hEN8d0c0fe8",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": []
+                    },
+                    "url": {
+                        "raw": "http://localhost:8000/api/products",
+                        "protocol": "http",
+                        "host": ["localhost"],
+                        "port": "8000",
+                        "path": ["api", "products"]
+                    }
+                },
+                "response": [],
+                "uid": "26597937-6f67d174-376a-4b27-9f5e-6d653cc3a459"
+            },
+            {
+                "name": "/api/products",
+                "id": "66ff5802-7073-4474-8458-91c2926c3202",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [
+                        {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Authorization",
+                            "value": "Bearer KGKuOkaCW08xV8oCNi1BmB96BhPiepgjFZA99hEN8d0c0fe8",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": [
+                            {
+                                "key": "name",
+                                "value": "Sambal ABC 250ML",
+                                "type": "text"
+                            },
+                            {
+                                "key": "price",
+                                "value": "12500",
+                                "type": "text"
+                            },
+                            {
+                                "key": "status",
+                                "value": "active",
+                                "type": "text"
+                            },
+                            {
+                                "key": "description",
+                                "value": "Sambal terenak se-RT sayah",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "raw": "http://localhost:8000/api/products",
+                        "protocol": "http",
+                        "host": ["localhost"],
+                        "port": "8000",
+                        "path": ["api", "products"]
+                    }
+                },
+                "response": [],
+                "uid": "26597937-66ff5802-7073-4474-8458-91c2926c3202"
+            },
+            {
+                "name": "/api/products (2)",
+                "id": "554fdb1c-d85c-4624-9856-a948883354fe",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "POST",
+                    "header": [
+                        {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Authorization",
+                            "value": "Bearer KGKuOkaCW08xV8oCNi1BmB96BhPiepgjFZA99hEN8d0c0fe8",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": [
+                            {
+                                "key": "name",
+                                "value": "Aqua Galon 19L",
+                                "type": "text"
+                            },
+                            {
+                                "key": "price",
+                                "value": "20000",
+                                "type": "text"
+                            },
+                            {
+                                "key": "status",
+                                "value": "active",
+                                "type": "text"
+                            },
+                            {
+                                "key": "description",
+                                "value": "Galon air",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "raw": "http://localhost:8000/api/products",
+                        "protocol": "http",
+                        "host": ["localhost"],
+                        "port": "8000",
+                        "path": ["api", "products"]
+                    }
+                },
+                "response": [],
+                "uid": "26597937-554fdb1c-d85c-4624-9856-a948883354fe"
+            },
+            {
+                "name": "/api/products/{id}",
+                "id": "71961321-9bc6-4e56-9828-626adec0201e",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "GET",
+                    "header": [
+                        {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Authorization",
+                            "value": "Bearer KGKuOkaCW08xV8oCNi1BmB96BhPiepgjFZA99hEN8d0c0fe8",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": []
+                    },
+                    "url": {
+                        "raw": "http://localhost:8000/api/products/1",
+                        "protocol": "http",
+                        "host": ["localhost"],
+                        "port": "8000",
+                        "path": ["api", "products", "1"]
+                    }
+                },
+                "response": [],
+                "uid": "26597937-71961321-9bc6-4e56-9828-626adec0201e"
+            },
+            {
+                "name": "/api/products/{id}",
+                "id": "8241a806-5c02-48f0-96f3-dd0c94a4b9b2",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "PUT",
+                    "header": [
+                        {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Authorization",
+                            "value": "Bearer KGKuOkaCW08xV8oCNi1BmB96BhPiepgjFZA99hEN8d0c0fe8",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": [
+                            {
+                                "key": "name",
+                                "value": "Sambal ABC 250ML",
+                                "type": "text"
+                            },
+                            {
+                                "key": "price",
+                                "value": "13000",
+                                "type": "text"
+                            },
+                            {
+                                "key": "status",
+                                "value": "active",
+                                "type": "text"
+                            },
+                            {
+                                "key": "description",
+                                "value": "Sambal terenak se-RT sayah",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    "url": {
+                        "raw": "http://localhost:8000/api/products/1",
+                        "protocol": "http",
+                        "host": ["localhost"],
+                        "port": "8000",
+                        "path": ["api", "products", "1"]
+                    }
+                },
+                "response": [],
+                "uid": "26597937-8241a806-5c02-48f0-96f3-dd0c94a4b9b2"
+            },
+            {
+                "name": "/api/products/{id}",
+                "id": "c5df2172-bc30-4497-8853-06250e61fa35",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "method": "DELETE",
+                    "header": [
+                        {
+                            "key": "Accept",
+                            "value": "application/json",
+                            "type": "text"
+                        },
+                        {
+                            "key": "Authorization",
+                            "value": "Bearer KGKuOkaCW08xV8oCNi1BmB96BhPiepgjFZA99hEN8d0c0fe8",
+                            "type": "text"
+                        }
+                    ],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": []
+                    },
+                    "url": {
+                        "raw": "http://localhost:8000/api/products/1",
+                        "protocol": "http",
+                        "host": ["localhost"],
+                        "port": "8000",
+                        "path": ["api", "products", "1"]
+                    }
+                },
+                "response": [],
+                "uid": "26597937-c5df2172-bc30-4497-8853-06250e61fa35"
+            }
+        ]
+    }
+}
